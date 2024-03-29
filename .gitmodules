@@ -10,3 +10,6 @@
 [submodule ".tmux/plugins/vim-tmux-navigator"]
 	path = .tmux/plugins/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule ".omz-custom/themes/powerlevel10k"]
+	path = .omz-custom/themes/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
