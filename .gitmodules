@@ -25,3 +25,7 @@
 [submodule ".omz-custom/plugins/zsh-syntax-highlighting"]
 	path = .omz-custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule ".config/spicetify/CustomApps/ncs-visualizer"]
+	path = .config/spicetify/CustomApps/ncs-visualizer
+	url = https://github.com/Konsl/spicetify-ncs-visualizer
+	branch = dist
