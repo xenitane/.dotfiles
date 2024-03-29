@@ -24,7 +24,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="false"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -77,7 +77,58 @@ ZSH_CUSTOM=$HOME/.omz-custom
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fzf)
+plugins=(
+    aliases
+    alias-finder
+    archlinux
+    colored-man-pages
+    colorize
+    command-not-found
+    common-aliases
+    copybuffer
+    copyfile
+    copypath
+    cp
+    docker
+    docker-compose
+    docker-machine
+    emoji
+    encode64
+    extract
+    fd
+    fzf
+    gh
+    git
+    git-commit
+    gitignore
+    golang
+    history
+    jsontools
+    man
+    mongocli
+    mongo-atlas
+    node
+    npm
+    perms
+    qrcode
+    rand-quote
+    ripgrep
+    rsync
+    rust
+    safe-paste
+    sudo
+    systemd
+    tmux
+    ufw
+    universalarchive
+    urltools
+    zoxide
+    zsh-autosuggestions
+    zsh-completions
+    zsh-history-substring-search
+    zsh-interactive-cd
+    zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,10 +157,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# fnm
-export PATH="/home/xenitane/.local/share/fnm:$PATH"
-eval "`fnm env`"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

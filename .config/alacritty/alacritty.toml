@@ -1,10 +1,12 @@
 import = ["~/.config/alacritty/catppuccin-mocha.toml"]
 
 [window]
-opacity = 0.9
-padding.x = 5
-padding.y = 5
+opacity = 0.85
 decorations = "Full"
+
+[window.padding]
+x = 5
+y = 5
 
 [font]
 normal.family = "JetBrainsMono Nerd Font"
@@ -12,4 +14,28 @@ bold.family = "JetBrainsMono Nerd Font"
 italic.family = "JetBrainsMono Nerd Font"
 bold_italic.family = "JetBrainsMono Nerd Font"
 
-size = 9.6
+size = 10.0
+
+[hints]
+alphabet = "jfkdls;ahgurieowpq"
+
+[[hints.enabled]]
+command = "xdg-open"
+hyperlinks = true
+post_processing = true
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[hints.enabled.binding]
+key = "U"
+mods = "Control|Shift"
+
+[hints.enabled.mouse]
+enabled = true
+mods = "None"
+
+[scrolling]
+history = 20000
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
