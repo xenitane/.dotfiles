@@ -2,7 +2,10 @@ import = ["~/.config/alacritty/catppuccin-mocha.toml"]
 
 [window]
 opacity = 0.85
-decorations = "Full"
+decorations = "None"
+blur = true
+title = "Alacritty"
+dynamic_title = false
 
 [window.padding]
 x = 5
