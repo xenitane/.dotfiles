@@ -29,3 +29,7 @@
 	path = .config/spicetify/CustomApps/ncs-visualizer
 	url = https://github.com/Konsl/spicetify-ncs-visualizer
 	branch = dist
+[submodule ".config/spicetify/CustomApps/eternal-jukebox"]
+	path = .config/spicetify/CustomApps/eternal-jukebox
+	url = https://github.com/Pithaya/spicetify-apps-dist
+	branch = dist/eternal-jukebox
