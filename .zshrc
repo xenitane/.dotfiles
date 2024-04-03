@@ -130,6 +130,14 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+if [[ -d "$HOME/bin" ]]; then
+    export PATH="$HOME/bin:$PATH"
+fi
+
+if [[ -d "$HOME/.local/bin" ]]; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
 ZOXIDE_CMD_OVERRIDE="cd"
 
 source $ZSH/oh-my-zsh.sh
