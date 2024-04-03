@@ -1,0 +1,40 @@
+import:
+  - ~/.config/alacritty/catppuccin-mocha.yml
+window:
+  opacity: 0.85
+  decorations: None
+  blur: true
+  title: Alacritty
+  dynamic_title: false
+  startup_mode: Maximized
+  padding:
+    x: 5
+    'y': 5
+font:
+  normal:
+    family: JetBrainsMono Nerd Font Mono
+  bold:
+    family: JetBrainsMono Nerd Font Mono
+  italic:
+    family: JetBrainsMono Nerd Font Mono
+  bold_italic:
+    family: JetBrainsMono Nerd Font Mono
+  size: 10
+hints:
+  alphabet: jfkdls;ahgurieowpq
+  enabled:
+    - command: xdg-open
+      hyperlinks: true
+      post_processing: true
+      regex: "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\0-\x1F\x7F-\x9F<>\"\\s{-}\\^⟨⟩`]+"
+      binding:
+        key: U
+        mods: Control|Shift
+      mouse:
+        enabled: true
+        mods: None
+scrolling:
+  history: 20000
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+

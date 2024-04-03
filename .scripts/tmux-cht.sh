@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 selected=`cat ~/.tmux/tmux-cht-languages ~/.tmux/tmux-cht-command | fzf`
 if [[ -z $selected ]]; then
     exit 0
 fi
 
-read -p "Enter Query: " query
+read "query?Enter Query: "
 
 if grep -qs "$selected" ~/.tmux/tmux-cht-languages; then
     query=`echo $query | tr ' ' '+'`
