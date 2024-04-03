@@ -33,3 +33,6 @@
 	path = .config/spicetify/CustomApps/eternal-jukebox
 	url = https://github.com/Pithaya/spicetify-apps-dist
 	branch = dist/eternal-jukebox
+[submodule ".tmux/plugins/tmux-sensible"]
+	path = .tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible

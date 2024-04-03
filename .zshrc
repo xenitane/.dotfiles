@@ -130,6 +130,8 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+ZOXIDE_CMD_OVERRIDE="cd"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -162,4 +164,3 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source ~/.utils.zsh
-
