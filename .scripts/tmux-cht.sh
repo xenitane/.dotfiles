@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/zsh
 selected=`cat ~/.tmux/tmux-cht-languages ~/.tmux/tmux-cht-command | fzf`
 if [[ -z $selected ]]; then
     exit 0

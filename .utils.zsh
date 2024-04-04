@@ -28,10 +28,17 @@ eval "$(atuin init zsh)"
 
 export PATH="$HOME/.scripts:$PATH"
 
+export PNPM_HOME="$HOME/.local/share/pnpm"
+case ":$PATH:" in
+    *":$PNPM_HOME:"*) ;;
+    *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
 utils=(
     nvim
     tmux
     fnm
+    pnpm
     thefuck
     exa
     fzf

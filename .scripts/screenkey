@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/zsh
 while [ : ]; do
     /usr/bin/screenkey --geometry 400x600+1200+0 -s medium --opacity 0.4
     pid=22227

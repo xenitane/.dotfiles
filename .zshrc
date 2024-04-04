@@ -108,7 +108,6 @@ plugins=(
     mongocli
     mongo-atlas
     node
-    npm
     perms
     qrcode
     rand-quote
