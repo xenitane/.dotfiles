@@ -11,9 +11,8 @@ export EDITOR="nvim"
 if ! command -v go >/dev/null 2>&1; then
     export PATH="/usr/local/go/bin:$PATH"
 fi
-export GOPATH="$(go env GOPATH)"
+export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
-export GOPATH="$GOPATH:$HOME/code/projects/go"
 
 export PATH="$HOME/.local/share/fnm:$PATH"
 eval "$(fnm env)"
