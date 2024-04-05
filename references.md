@@ -1,0 +1,197 @@
+# TODO
+
+## TASKS
+- [ ] we'll go full arch, so fuck support for other os's.
+
+## TOOLS
+- [ ] yazi/mc - cli file explorer
+- [ ] htmlq/jsonquery - cli query tools for html and json
+- [ ] anydesk - remote desktop
+- browsers:
+    - [ ] brave
+    - [ ] firefox
+    - [ ] chromium
+- [ ] responsively - web ui testing tool
+- [ ] jless - json explorer
+- [ ] xh/httpie - modern curls
+- [ ] kondo - remove unneded local copies of dependencies
+- [ ] difftastic - diff tool, fing awesome
+- [ ] rnr - batch renaming, easy and safe
+- [ ] yay
+- [ ] go
+- [ ] rust
+- [ ] mprocs - process manager for multi layer applications
+- [ ] gnu parallel -  wtf is this
+- [ ] speedread - read plaintext files with just content fastly
+- [ ] rmlint - remove duplicates
+- [ ] rsync - fuck cp cause we can
+- [ ] rclone - cli for cloud drives
+- [ ] du-dust/ncdu- disk usage analyser
+- [ ] ntfy - send notifications from cli
+- [ ] ripgrep - better grep
+- [ ] lazygit - better git cli
+- [ ] fd - find but better
+- [ ] bat - better cat
+- [ ] fzf - just the good stuff
+- [ ] tmux/zellij - just wooow
+    - [ ] plugins...
+- [ ] btop - better system monitor
+- [ ] pipes.sh - windows xp pipes screensave in cli
+- [ ] asciiquarium - aquarium in terminal
+- [ ] cmatrix - get the matrix's char dropping effect
+- [ ] spotify/spicetify
+- [ ] figlet - make text ascii atr
+- [ ] cowsay - make a cow say it
+- [ ] neofetch - print systems info
+- [ ] postman - api tester
+- [ ] gf2 - gdb with all the good stuff we need
+- [ ] exa - better ls
+- [ ] cht.sh - cheat sheet
+- [ ] cava/cli-visualizer - audio visualizer for cli
+- [ ] tldr - who has time to read man pages
+- [ ] entr - nodemon but for general purpose
+- [ ] lazydocker - docker commands are too complex
+- [ ] neovim - not an editor, but "the" editor
+    - [ ] plugins....
+- [ ] atuin - looking up your cli history made easy
+- [ ] fnm/asdf/... - package version manager **needs more research**
+- [ ] zoxide - you'll forget cd
+- [ ] thefuck - now your terminal will help you when you write a bad command
+- [ ] rmtrash - we need the send to recycle bin
+- [ ] espeak-ng - computer turned spokesperson
+- [ ] edex-ui - something cool but not for today
+- [ ] gitgen - gif maker
+- [ ] iperf3 - local network speed test
+- [ ] iozone - benchmark disk/drive/etc io
+- [ ] catppuccin - W theme
+- [ ] sysbench - benchmarking tool
+- [ ] stress-ng - strees test systems
+- [ ] nvim-sillicon - take code snapshots from nvim all with keys
+- [ ] some useful shell scripts
+- cli for popular tools
+    - [ ] gihub
+    - [ ] azure
+    - [ ] ...
+- [ ] fftw
+- [ ] ncurses
+- [ ] ffmpeg
+- [ ] docker
+- [ ] xz
+- [ ] boost
+- [ ] qemu/virt-manager/virt-viewer/dnsmasq/vde2/bridge-utils/openbds-netcat/dmidecode
+- [ ] libalpm
+- [ ] ebtables/iptables
+- [ ] libguestfs
+- [ ] arecord
+- [ ] xclip
+- [ ] xkill
+- [ ] xorg-xbacklight
+- [ ] network-manager-cli
+- [ ] gedit
+- [ ] xfce4-power-manager
+- [ ] gnu stow
+- [ ] thunar
+- [ ] thunar-voluman
+- [ ] pcmanfm
+- [ ] udiskie
+- [ ] udisks2
+- [ ] gvfs
+- [ ] acpi
+- [ ] gucharmap
+- [ ] gimp
+- [ ] pinta
+- [ ] ufw/gufw
+- [ ] mpv
+- [ ] celluloid
+- [ ] vlc
+- [ ] obsstudio
+- [ ] guvcview
+- [ ] libreoffice
+- [ ] gparted
+- [ ] conky
+- [ ] redshift
+- [ ] nitrogen
+- [ ] font-viewer
+- [ ] filezilla
+- [ ] alsa-utils
+- [ ] pavucontrol
+- [ ] base-devel
+- [ ] scrcpy
+- [ ] pipewire-pulse pipewire pipewire-audio pipewire-jack pipewier-jack-client
+- [ ] helvum
+- [ ] some more stuff i'll look into
+- fonts:
+    - [ ] jetbrainsmono nerf font
+    - [ ] noto color emoji
+    - [ ] noto fonts emoji
+    - [ ] roboto
+    - [ ] roboto mono
+    - [ ] meslo
+    - [ ] fira code
+    - [ ] opensans
+    - [ ] ubuntu
+    - [ ] ubuntu mono
+    - [ ] ...
+
+- <https://www.youtube.com/watch?v=nTqu6w2wc68>
+- <https://www.youtube.com/watch?v=l_TTxc0AcCw>
+- <https://github.com/folke/noice.nvim>
+- <https://github.com/rcarriga/nvim-notify>
+- <https://github.com/j-hui/fidget.nvim>
+- <https://github.com/nvim-lualine/lualine.nvim>
+- <https://github.com/anuvyklack/windows.nvim>
+- <https://github.com/mfussenegger/nvim-dap>
+- <https://github.com/rcarriga/nvim-dap-ui>
+- <https://github.com/nvim-tree/nvim-tree.lua>
+- <https://github.com/nvim-neo-tree/neo-tree.nvim>
+- <https://github.com/catppuccin/nvim>
+- <https://github.com/yamatsum/nvim-nonicons>
+- <https://github.com/ziontee113/icon-picker.nvim>
+- <https://github.com/nvim-telescope/telescope-symbols.nvim>
+- <https://github.com/lunarvim/lunarvim>
+- <https://github.com/AstroNvim/AstroNvim>
+- <https://github.com/LazyVim/LazyVim>
+- <https://github.com/NvChad/NvChad/>
+- <https://github.com/ChocolateBread799/dotfiles>
+- <https://github.com/MCotocel/dotfiles>
+- <https://github.com/xinhaoyuan/layout-machi>
+- <https://github.com/K4rakara/awestore>
+- <https://github.com/BlingCorp/bling>
+- <https://github.com/nuxshed/dotfiles>
+- <https://github.com/eromatiya/the-glorious-dotfiles>
+- <https://gitlab.com/CraftedCart/dotfiles>
+- <https://github.com/elenapan/dotfiles>
+- <https://gitlab.com/noaccOS/dotfiles>
+- <https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux>
+- <https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md>
+- <https://github.com/Amitabha37377/Awful-DOTS?tab=readme-ov-file>
+- <https://github.com/MeledoJames/awesome-setup>
+- <https://github.com/rklyz/MyRice>
+- <https://github.com/janleigh/dotfiles>
+- <https://github.com/owl4ce/dotfiles>
+- <https://github.com/rxyhn>
+- <https://github.com/Syndrizzle>
+- <https://github.com/ChocolateBread799/dotfiles>
+- <https://github.com/Crylia/crylia-theme>
+- <https://github.com/drahenprofi/dotfiles>
+- <https://github.com/Mofiqul/awesome-shell>
+- <https://github.com/saimoomedits/dotfiles>
+- <https://github.com/eromatiya/the-glorious-dotfiles>
+- <https://github.com/Purhan/dotfiles/>
+- <https://github.com/potamides/dotfiles>
+- <https://github.com/nuxshed/dotfiles>
+- <https://github.com/Jeremie1001/dotfiles>
+- <https://github.com/Jeremie1001/awesome-dotfiles>
+- <https://github.com/WillPower3309/awesome-dotfiles>
+- <https://github.com/jazz-g/shining-plum>
+- <https://github.com/Mofiqul/awesome-shell>
+- <https://github.com/elenapan/dotfiles>
+- <https://github.com/szorfein/dotfiles>
+- <https://github.com/material-shell/material-awesome>
+- <https://github.com/Amitabha37377/Awful-DOTS>
+- <https://github.com/rxyhn/rxyhn/>
+- <https://github.com/elenapan/dotfiles>
+- <https://github.com/Amitabha37377/Awful-DOTS>
+- <https://github.com/ayamir/dotfiles>
+- <https://github.com/elenapan/dotfiles>
+- <https://www.reddit.com/r/unixporn/comments/op73tw/awesomewm_neumorphic_awesome/>
