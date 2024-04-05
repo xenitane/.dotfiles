@@ -8,6 +8,9 @@ fi
 
 export EDITOR="nvim"
 
+if ! command -v go >/dev/null 2>&1; then
+    export PATH="/usr/local/go/bin:$PATH"
+fi
 export GOPATH="$(go env GOPATH)"
 export PATH="$GOPATH/bin:$PATH"
 export GOPATH="$GOPATH:$HOME/code/projects/go"
