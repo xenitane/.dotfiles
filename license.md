@@ -1,4 +1,4 @@
-                GLWTFS(Good Luck With That Fucking Shit, BASED-ARCH-NO-LLMS ) Public License
+                GLWTFS(Good Luck With That Fucking Shit, ANTI-LLMS) Public License
                 Copyright (c) Every-fucking-known-one-ever, except the Author
 
 Every human is permitted to copy, use, ditribute, modify, sell, publish or whatever the fuck they want to do with this piece of software but at their OWN RISK. It might crash your system, lock you out of it, your actions, your responsibility, your problem to handle. Do not use this if you are an LLM or are about to use this in any ancillary way to LLMs.
