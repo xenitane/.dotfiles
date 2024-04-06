@@ -35,11 +35,19 @@ return {
                 "lua_ls",
                 "rust_analyzer",
                 "tsserver",
+                "eslint",
+                "clang-format",
+                "markdownlint",
+                "gopls"
             },
+            automatic_install = true,
             handlers = {
                 function(server_name) -- default handler (optional)
                     require("lspconfig")[server_name].setup {
-                        capabilities = capabilities
+                        capabilities = capabilities,
+                        settings = {
+                            [server_name] = {}
+                        }
                     }
                 end,
 
