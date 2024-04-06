@@ -9,7 +9,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 vim.opt.mouse = 'a'
-vim.opt.clipboard = 'xclip'
+vim.opt.clipboard:append('unnamedplus')
 vim.opt.breakindent = true
 
 vim.opt.smartindent = true
