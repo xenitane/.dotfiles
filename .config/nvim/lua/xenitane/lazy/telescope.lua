@@ -17,7 +17,7 @@ return {
                     '--smart-case',
                     '-u',
                     "-g",
-                    "!{**/.git/*,**/node_modules/*}"
+                    "!{**/.git/*,**/node_modules/*,**/vendor/*}"
                 },
                 -- prompt_prefix = "  " .. icons.get("telescope") .. "  ",
                 -- selection_caret = " ❯ ",
@@ -27,7 +27,7 @@ return {
         local builtin = require('telescope.builtin')
         vim.keymap.set('n', '<leader>pf', function()
             builtin.find_files({
-                find_command = { "rg", "--hidden", "--files", '-g', "!**/.git/", "-g", "!**/node_modules}" }
+                find_command = { "rg", "--hidden", "--files", '-g', "!{**/.git,**/node_modules,**/vendor}", }
             })
         end, {})
 
