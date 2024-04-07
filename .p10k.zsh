@@ -49,6 +49,7 @@
     # =========================[ Line #1 ]=========================
     status                  # exit code of the last command
     command_execution_time  # duration of the last command
+    mydir
     vcs
     # background_jobs         # presence of background jobs
     # direnv                  # direnv status (https://direnv.net/)
@@ -196,7 +197,7 @@
   typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=232
   typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=7
    # Custom icon.
-   typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=''
+   # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=''
 
   ###############################[ prompt_char: prompt symbol ]################################
    # Transparent background.
@@ -359,6 +360,11 @@
 
   # Custom prefix.
   # typeset -g POWERLEVEL9K_DIR_PREFIX='in '
+  function prompt_mydir() {
+      if [[ -z $TMUX ]]; then
+          prompt_dir
+      fi
+  }
 
   #####################################[ vcs: git status ]######################################
   # Version control background colors.
