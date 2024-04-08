@@ -9,8 +9,11 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 vim.opt.mouse = 'a'
-vim.opt.clipboard:append('unnamedplus')
+vim.opt.clipboard = 'unnamedplus'
 vim.opt.breakindent = true
+
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 vim.opt.smartindent = true
 
@@ -37,3 +40,7 @@ vim.opt.laststatus = 2
 vim.opt.autowrite = true
 vim.opt.cursorline = true
 vim.opt.autoread = true
+
+vim.opt.completeopt = 'menuone,noselect'
+vim.opt.conceallevel=2
+

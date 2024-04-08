@@ -53,3 +53,5 @@
 [rerere]
   autoUpdate = true
   enabled = true
+[diff "exif"]
+	textconv = exiftool
