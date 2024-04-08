@@ -38,12 +38,6 @@
 [submodule ".tmux/plugins/tmux-sessionx"]
 	path = .tmux/plugins/tmux-sessionx
 	url = https://www.github.com/omerxx/tmux-sessionx
-[submodule ".tmux/plugins/tmux-resurrect"]
-	path = .tmux/plugins/tmux-resurrect
-	url = https://www.github.com/tmux-plugins/tmux-resurrect
-[submodule ".tmux/plugins/tmux-continuum"]
-	path = .tmux/plugins/tmux-continuum
-	url = https://www.github.com/tmux-plugins/tmux-continuum
 [submodule ".tmux/plugins/tmux-thumbs"]
 	path = .tmux/plugins/tmux-thumbs
 	url = https://www.github.com/fcsonline/tmux-thumbs
