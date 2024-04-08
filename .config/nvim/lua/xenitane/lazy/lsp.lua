@@ -33,6 +33,30 @@ return {
 
         local lspconfig = require("lspconfig")
 
+        local on_attach = function(e)
+            vim.bo[e.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
+            local opts = { buffer = e.buf, noremap = true, silent = true }
+            vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
+            vim.keymap.set("n", "gD", function() vim.lsp.buf.declaration() end, opts)
+            vim.keymap.set("n", "gi", function() vim.lsp.buf.implementation() end, opts)
+            vim.keymap.set("n", "go", function() vim.lsp.buf.type_definition() end, opts)
+            vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
+            vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
+            vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
+            vim.keymap.set({ "n", "v" }, "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
+            vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
+            vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
+            vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+            vim.keymap.set("n", "[d", function() vim.diagnostic.goto_prev() end, opts)
+            vim.keymap.set("n", "d]", function() vim.diagnostic.goto_next() end, opts)
+            vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, opts)
+            vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, opts)
+            vim.keymap.set('n', '<leader>wl', function()
+                print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
+            end, opts)
+            vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+        end
+
         require("fidget").setup({})
         require("mason").setup()
         require("mason-lspconfig").setup({
@@ -54,6 +78,7 @@ return {
                 function(server_name) -- default handler (optional)
                     lspconfig[server_name].setup {
                         capabilities = capabilities,
+                        on_attach = on_attach
                     }
                 end,
 
@@ -88,30 +113,6 @@ return {
             }
         }
 
-        local on_attach = function(e)
-            vim.bo[e.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
-            local opts = { buffer = e.buf, noremap = true, silent = true }
-            vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
-            vim.keymap.set("n", "gD", function() vim.lsp.buf.declaration() end, opts)
-            vim.keymap.set("n", "gi", function() vim.lsp.buf.implementation() end, opts)
-            vim.keymap.set("n", "go", function() vim.lsp.buf.type_definition() end, opts)
-            vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
-            vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
-            vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
-            vim.keymap.set({ "n", "v" }, "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
-            vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
-            vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
-            vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
-            vim.keymap.set("n", "[d", function() vim.diagnostic.goto_prev() end, opts)
-            vim.keymap.set("n", "d]", function() vim.diagnostic.goto_next() end, opts)
-            vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, opts)
-            vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, opts)
-            vim.keymap.set('n', '<leader>wl', function()
-                print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
-            end, opts)
-            vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-        end
-
         vim.api.nvim_create_autocmd('LspAttach', { callback = on_attach })
 
         lspconfig.tailwindcss.setup({
@@ -119,6 +120,15 @@ return {
             capabilities = capabilities,
             filetypes = { "templ", "astro", "javascript", "typescript", "react" },
             init_options = { userLanguages = { templ = "html" } },
+        })
+
+        lspconfig.unocss.setup({
+            on_attach = on_attach,
+            capabilities = capabilities,
+            filetypes = { "html", "templ", "javascript", "typescript", "react", "astro", "javascriptreact", "typescriptreact", "vue", "svelte", "rescript" },
+            init_options = { userLanguages = { templ = "html" } },
+            root_dir = require 'lspconfig.util'.root_pattern('unocss.config.js', 'unocss.config.ts', 'uno.config.js',
+                'uno.config.ts')
         })
 
         lspconfig.html.setup({
@@ -155,8 +165,8 @@ return {
                 ['<C-N>'] = cmp.mapping.scroll_docs(4),
             }),
             sources = cmp.config.sources({
-                { name = 'nvim_lsp' },
-                { name = 'luasnip' },
+                { name = 'nvim_lsp', trigger_characters = { '-' } },
+                { name = 'luasnip',  trigger_characters = { '-' } },
             }, {
                 { name = 'buffer' },
             }),

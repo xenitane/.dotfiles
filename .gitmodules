@@ -3,13 +3,13 @@
 	url = https://github.com/ohmyzsh/ohmyzsh
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm
+	url = https://www.github.com/tmux-plugins/tpm
 [submodule ".tmux/plugins/tmux"]
 	path = .tmux/plugins/tmux
-	url = https://github.com/catppuccin/tmux
+	url = https://www.github.com/catppuccin/tmux
 [submodule ".tmux/plugins/vim-tmux-navigator"]
 	path = .tmux/plugins/vim-tmux-navigator
-	url = https://github.com/christoomey/vim-tmux-navigator
+	url = https://www.github.com/christoomey/vim-tmux-navigator
 [submodule ".omz-custom/themes/powerlevel10k"]
 	path = .omz-custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
@@ -29,13 +29,27 @@
 	path = .config/spicetify/CustomApps/ncs-visualizer
 	url = https://github.com/Konsl/spicetify-ncs-visualizer
 	branch = dist
-[submodule ".config/spicetify/CustomApps/eternal-jukebox"]
-	path = .config/spicetify/CustomApps/eternal-jukebox
-	url = https://github.com/Pithaya/spicetify-apps-dist
-	branch = dist/eternal-jukebox
 [submodule ".tmux/plugins/tmux-sensible"]
 	path = .tmux/plugins/tmux-sensible
-	url = https://github.com/tmux-plugins/tmux-sensible
+	url = https://www.github.com/https://www.github.com/tmux-plugins/tmux-sensible
 [submodule ".local/share/mc/skins/mc"]
 	path = .local/share/mc/skins/mc
 	url = https://github.com/catppuccin/mc.git
+[submodule ".tmux/plugins/tmux-sessionx"]
+	path = .tmux/plugins/tmux-sessionx
+	url = https://www.github.com/omerxx/tmux-sessionx
+[submodule ".tmux/plugins/tmux-resurrect"]
+	path = .tmux/plugins/tmux-resurrect
+	url = https://www.github.com/tmux-plugins/tmux-resurrect
+[submodule ".tmux/plugins/tmux-continuum"]
+	path = .tmux/plugins/tmux-continuum
+	url = https://www.github.com/tmux-plugins/tmux-continuum
+[submodule ".tmux/plugins/tmux-thumbs"]
+	path = .tmux/plugins/tmux-thumbs
+	url = https://www.github.com/fcsonline/tmux-thumbs
+[submodule ".tmux/plugins/tmux-fzf"]
+	path = .tmux/plugins/tmux-fzf
+	url = https://www.github.com/sainnhe/tmux-fzf
+[submodule ".tmux/plugins/tmux-fzf-url"]
+	path = .tmux/plugins/tmux-fzf-url
+	url = https://www.github.com/wfxr/tmux-fzf-url
