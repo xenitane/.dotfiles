@@ -31,7 +31,7 @@
 	branch = dist
 [submodule ".tmux/plugins/tmux-sensible"]
 	path = .tmux/plugins/tmux-sensible
-	url = https://www.github.com/https://www.github.com/tmux-plugins/tmux-sensible
+	url = https://www.github.com/tmux-plugins/tmux-sensible
 [submodule ".local/share/mc/skins/mc"]
 	path = .local/share/mc/skins/mc
 	url = https://github.com/catppuccin/mc.git
