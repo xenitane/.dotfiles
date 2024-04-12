@@ -1,49 +1,49 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
-	url = https://github.com/ohmyzsh/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
-	url = https://www.github.com/tmux-plugins/tpm
+	url = https://www.github.com/tmux-plugins/tpm.git
 [submodule ".tmux/plugins/tmux"]
 	path = .tmux/plugins/tmux
-	url = https://www.github.com/catppuccin/tmux
+	url = https://www.github.com/catppuccin/tmux.git
 [submodule ".tmux/plugins/vim-tmux-navigator"]
 	path = .tmux/plugins/vim-tmux-navigator
-	url = https://www.github.com/christoomey/vim-tmux-navigator
+	url = https://www.github.com/christoomey/vim-tmux-navigator.git
 [submodule ".omz-custom/themes/powerlevel10k"]
 	path = .omz-custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 [submodule ".omz-custom/plugins/zsh-history-substring-search"]
 	path = .omz-custom/plugins/zsh-history-substring-search
-	url = https://github.com/zsh-users/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search.git
 [submodule ".omz-custom/plugins/zsh-completions"]
 	path = .omz-custom/plugins/zsh-completions
-	url = https://github.com/zsh-users/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
 [submodule ".omz-custom/plugins/zsh-autosuggestions"]
 	path = .omz-custom/plugins/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
 [submodule ".omz-custom/plugins/zsh-syntax-highlighting"]
 	path = .omz-custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule ".config/spicetify/CustomApps/ncs-visualizer"]
 	path = .config/spicetify/CustomApps/ncs-visualizer
-	url = https://github.com/Konsl/spicetify-ncs-visualizer
+	url = https://github.com/Konsl/spicetify-ncs-visualizer.git
 	branch = dist
 [submodule ".tmux/plugins/tmux-sensible"]
 	path = .tmux/plugins/tmux-sensible
-	url = https://www.github.com/tmux-plugins/tmux-sensible
+	url = https://www.github.com/tmux-plugins/tmux-sensible.git
 [submodule ".local/share/mc/skins/mc"]
 	path = .local/share/mc/skins/mc
 	url = https://github.com/catppuccin/mc.git
 [submodule ".tmux/plugins/tmux-sessionx"]
 	path = .tmux/plugins/tmux-sessionx
-	url = https://www.github.com/omerxx/tmux-sessionx
+	url = https://www.github.com/omerxx/tmux-sessionx.git
 [submodule ".tmux/plugins/tmux-thumbs"]
 	path = .tmux/plugins/tmux-thumbs
-	url = https://www.github.com/fcsonline/tmux-thumbs
+	url = https://www.github.com/fcsonline/tmux-thumbs.git
 [submodule ".tmux/plugins/tmux-fzf"]
 	path = .tmux/plugins/tmux-fzf
-	url = https://www.github.com/sainnhe/tmux-fzf
+	url = https://www.github.com/sainnhe/tmux-fzf.git
 [submodule ".tmux/plugins/tmux-fzf-url"]
 	path = .tmux/plugins/tmux-fzf-url
-	url = https://www.github.com/wfxr/tmux-fzf-url
+	url = https://www.github.com/wfxr/tmux-fzf-url.git
