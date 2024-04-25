@@ -65,13 +65,12 @@ return {
                 "rust_analyzer",
                 "tsserver",
                 "eslint",
-                "clang-format",
-                "markdownlint",
                 "gopls",
                 "templ",
-                "html",
                 "htmx",
-                "tailwindcss"
+                "tailwindcss",
+                "prettier",
+                "html"
             },
             automatic_install = true,
             handlers = {
@@ -118,7 +117,7 @@ return {
         lspconfig.tailwindcss.setup({
             on_attach = on_attach,
             capabilities = capabilities,
-            filetypes = { "templ", "astro", "javascript", "typescript", "react" },
+            filetypes = { "html", "javascript", "typescript", "javascriptreact", "typescriptreact", "css", "vue", "svelte", "rescript", "templ", "astro", "react" },
             init_options = { userLanguages = { templ = "html" } },
         })
 
@@ -142,6 +141,7 @@ return {
             capabilities = capabilities,
             filetypes = { "html", "templ" },
         })
+
 
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
 

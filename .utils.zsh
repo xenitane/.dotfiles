@@ -2,7 +2,7 @@ if command -v batcat >/dev/null 2>&1; then
     alias bat="batcat"
 fi
 
-if command -v fdfind >/dev/null 2>&1; then
+if command -v fd-find >/dev/null 2>&1; then
     alias fd="fdfind"
 fi
 
