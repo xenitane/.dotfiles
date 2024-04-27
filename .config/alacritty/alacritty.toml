@@ -42,4 +42,3 @@ history = 20000
 
 [selection]
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
-

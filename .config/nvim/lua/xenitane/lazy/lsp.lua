@@ -273,37 +273,11 @@ return {
             },
         })
 
-        local util = require("formatter.util")
-
         require("formatter").setup({
             logging = true,
             log_level = vim.log.levels.WARN,
             filetype = {
-                lua = {
-                    require("formatter.filetypes.lua").stylua,
-
-                    -- You can also define your own configuration
-                    function()
-                        -- Supports conditional formatting
-                        if util.get_current_buffer_file_name() == "special.lua" then
-                            return nil
-                        end
-
-                        -- Full specification of configurations is down below and in Vim help
-                        -- files
-                        return {
-                            exe = "stylua",
-                            args = {
-                                "--search-parent-directories",
-                                "--stdin-filepath",
-                                util.escape_path(util.get_current_buffer_file_path()),
-                                "--",
-                                "-",
-                            },
-                            stdin = true,
-                        }
-                    end,
-                },
+                lua = { require("formatter.filetypes.lua").stylua },
                 html = { require("formatter.filetypes.html").prettier },
                 javascript = { require("formatter.filetypes.javascript").prettier },
                 javascriptreact = { require("formatter.filetypes.javascriptreact").prettier },
@@ -319,7 +293,10 @@ return {
                 ["*"] = {
                     require("formatter.filetypes.any").remove_trailing_whitespace,
                     function()
-                        vim.lsp.buf.format()
+                        local defined_types = require("formatter.config").values.filetype
+                        if defined_types[vim.bo.filetype] ~= nil then
+                            vim.lsp.buf.format({ async = true })
+                        end
                     end,
                 },
             },

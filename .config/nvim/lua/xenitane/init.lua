@@ -28,7 +28,7 @@ aucmd("BufWritePre", {
     callback = function()
         local bufnr = vim.api.nvim_get_current_buf()
         local filename = vim.api.nvim_buf_get_name(bufnr)
-        local cmd = "templ fmt" .. vim.fn.shellescape(filename)
+        local cmd = "templ fmt " .. vim.fn.shellescape(filename)
 
         vim.fn.jobstart(cmd, {
             on_exit = function()
@@ -45,7 +45,7 @@ aucmd("BufWritePre", {
     group = XenitaneGroup,
     pattern = "*",
     callback = function()
-        vim.cmd([[Format]])
+        vim.cmd("Format")
     end,
 })
 

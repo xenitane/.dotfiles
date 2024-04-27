@@ -49,7 +49,7 @@
     # =========================[ Line #1 ]=========================
     status                  # exit code of the last command
     command_execution_time  # duration of the last command
-    mydir
+    dir
     vcs
     # background_jobs         # presence of background jobs
     # direnv                  # direnv status (https://direnv.net/)
@@ -360,6 +360,9 @@
 
   # Custom prefix.
   # typeset -g POWERLEVEL9K_DIR_PREFIX='in '
+
+
+  #####################################[ mydir: dir only in tmux ]######################################
   function prompt_mydir() {
       if [[ -z $TMUX ]]; then
           prompt_dir
