@@ -17,7 +17,7 @@ aucmd("TextYankPost", {
     pattern = "*",
     callback = function()
         vim.highlight.on_yank({
-            higroup = 'IncSearch',
+            higroup = "IncSearch",
             timeout = 40,
         })
     end,
@@ -28,32 +28,31 @@ aucmd("BufWritePre", {
     callback = function()
         local bufnr = vim.api.nvim_get_current_buf()
         local filename = vim.api.nvim_buf_get_name(bufnr)
-        local cmd = "templ fmt " .. vim.fn.shellescape(filename)
+        local cmd = "templ fmt" .. vim.fn.shellescape(filename)
 
         vim.fn.jobstart(cmd, {
             on_exit = function()
                 -- Reload the buffer only if it's still the current buffer
                 if vim.api.nvim_get_current_buf() == bufnr then
-                    vim.cmd('e!')
+                    vim.cmd("e!")
                 end
             end,
         })
-    end
+    end,
 })
 
 aucmd("BufWritePre", {
     group = XenitaneGroup,
-    pattern = '*',
+    pattern = "*",
     callback = function()
-        vim.cmd [[%s/\s\+$//e]]
-        vim.cmd [[Format]]
-    end
+        vim.cmd([[Format]])
+    end,
 })
 
 aucmd("BufWritePost", {
     callback = function()
         require("lint").try_lint()
-    end
+    end,
 })
 
 vim.g.netrw_browse_split = 0

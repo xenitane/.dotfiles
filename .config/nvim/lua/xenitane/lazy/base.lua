@@ -2,7 +2,7 @@ return {
     { "folke/lazy.nvim" },
     {
         "nvim-lua/plenary.nvim",
-        name = "plenary"
+        name = "plenary",
     },
     { "Eandrju/cellular-automaton.nvim" },
     { "christoomey/vim-tmux-navigator" },
@@ -11,8 +11,7 @@ return {
     { "tpope/vim-surround" },
     {
         "folke/neodev.nvim",
-        opts = {}
+        opts = {},
     },
-    { "folke/neoconf.nvim", }
-
+    { "folke/neoconf.nvim" },
 }

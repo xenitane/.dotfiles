@@ -1,4 +1,4 @@
-vim.g.mapleader = ' '
+vim.g.mapleader = " "
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -8,8 +8,8 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
-vim.opt.mouse = 'a'
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.mouse = "a"
+vim.opt.clipboard = "unnamedplus"
 vim.opt.breakindent = true
 
 vim.opt.ignorecase = true
@@ -41,7 +41,7 @@ vim.opt.autowrite = true
 vim.opt.cursorline = true
 vim.opt.autoread = true
 
-vim.opt.completeopt = 'menuone,noselect'
+vim.opt.completeopt = "menuone,noselect"
 vim.opt.conceallevel = 2
 
 vim.lsp.set_log_level("off")

@@ -1,13 +1,13 @@
-return  {
+return {
     "folke/zen-mode.nvim",
     config = function()
-        vim.keymap.set('n', '<leader>zz', function()
-            require("zen-mode").setup {
+        vim.keymap.set("n", "<leader>zz", function()
+            require("zen-mode").setup({
                 window = {
                     width = 90,
-                    options = {}
-                }
-            }
+                    options = {},
+                },
+            })
             require("zen-mode").toggle()
             vim.wo.wrap = false
             vim.wo.nu = true
@@ -16,12 +16,12 @@ return  {
         end)
 
         vim.keymap.set("n", "<leader>zZ", function()
-            require("zen-mode").setup {
+            require("zen-mode").setup({
                 window = {
                     width = 80,
-                    options = { }
+                    options = {},
                 },
-            }
+            })
             require("zen-mode").toggle()
             vim.wo.wrap = false
             vim.wo.number = false
@@ -29,5 +29,5 @@ return  {
             vim.opt.colorcolumn = "0"
             SetColorScheme()
         end)
-    end
+    end,
 }

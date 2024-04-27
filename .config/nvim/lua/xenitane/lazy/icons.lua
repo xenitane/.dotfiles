@@ -1,3 +1,3 @@
 return {
-    'yamatsum/nvim-nonicons',
+    "yamatsum/nvim-nonicons",
 }

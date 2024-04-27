@@ -28,6 +28,6 @@ return {
                 },
             })
             SetColorScheme()
-        end
-    }
+        end,
+    },
 }

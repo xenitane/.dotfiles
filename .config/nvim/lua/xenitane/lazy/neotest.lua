@@ -9,16 +9,16 @@ return {
         "nvim-neotest/neotest-plenary",
     },
     config = function()
-         local neotest = require("neotest")
-            neotest.setup({
-                adapters = {
-                    require("neotest-vitest"),
-                    require("neotest-plenary")
-                }
-            })
+        local neotest = require("neotest")
+        neotest.setup({
+            adapters = {
+                require("neotest-vitest"),
+                require("neotest-plenary"),
+            },
+        })
 
-            vim.keymap.set("n", "<leader>tc", function()
-                neotest.run.run()
-            end)
-    end
+        vim.keymap.set("n", "<leader>tc", function()
+            neotest.run.run()
+        end)
+    end,
 }

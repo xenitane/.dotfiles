@@ -9,8 +9,21 @@ return {
         require("nvim-treesitter.configs").setup({
             -- A list of parser names, or "all"
             ensure_installed = {
-                "vimdoc", "javascript", "typescript", "c", "lua", "rust",
-                "jsdoc", "bash", "cpp", "vim", "query", "java", "html", "css", "sql",
+                "vimdoc",
+                "javascript",
+                "typescript",
+                "c",
+                "lua",
+                "rust",
+                "jsdoc",
+                "bash",
+                "cpp",
+                "vim",
+                "query",
+                "java",
+                "html",
+                "css",
+                "sql",
             },
 
             sync_install = false,
@@ -32,5 +45,5 @@ return {
         }
 
         vim.treesitter.language.register("templ", "templ")
-    end
+    end,
 }
