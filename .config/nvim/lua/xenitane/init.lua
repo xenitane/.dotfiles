@@ -46,7 +46,7 @@ aucmd("BufWritePre", {
     pattern = '*',
     callback = function()
         vim.cmd [[%s/\s\+$//e]]
-        vim.lsp.buf.format()
+        vim.cmd [[Format]]
     end
 })
 

@@ -121,6 +121,7 @@ plugins=(
     ufw
     universalarchive
     urltools
+    vi-mode
     zoxide
     zsh-autosuggestions
     zsh-completions

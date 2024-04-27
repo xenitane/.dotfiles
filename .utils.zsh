@@ -36,6 +36,8 @@ case ":$PATH:" in
     *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
+alias fman="compgen -c | fzf | xargs man"
+
 utils=(
     nvim
     tmux

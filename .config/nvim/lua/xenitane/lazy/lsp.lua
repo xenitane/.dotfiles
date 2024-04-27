@@ -69,7 +69,6 @@ return {
                 "templ",
                 "htmx",
                 "tailwindcss",
-                "prettier",
                 "html"
             },
             automatic_install = true,
@@ -165,8 +164,8 @@ return {
                 ['<C-N>'] = cmp.mapping.scroll_docs(4),
             }),
             sources = cmp.config.sources({
-                { name = 'nvim_lsp', trigger_characters = { '-' } },
-                { name = 'luasnip',  trigger_characters = { '-' } },
+                { name = 'nvim_lsp', },
+                { name = 'luasnip', },
             }, {
                 { name = 'buffer' },
             }),
@@ -218,6 +217,53 @@ return {
                     [vim.diagnostic.severity.N] = "",
                     [vim.diagnostic.severity.I] = "",
                 }
+            }
+        })
+
+        local util = require("formatter.util")
+
+        require("formatter").setup({
+            logging = false,
+            log_level = vim.log.levels.WARN,
+            filetype = {
+                lua = {
+                    require("formatter.filetypes.lua").stylua,
+
+                    -- You can also define your own configuration
+                    function()
+                        -- Supports conditional formatting
+                        if util.get_current_buffer_file_name() == "special.lua" then
+                            return nil
+                        end
+
+                        -- Full specification of configurations is down below and in Vim help
+                        -- files
+                        return {
+                            exe = "stylua",
+                            args = {
+                                "--search-parent-directories",
+                                "--stdin-filepath",
+                                util.escape_path(util.get_current_buffer_file_path()),
+                                "--",
+                                "-",
+                            },
+                            stdin = true,
+                        }
+                    end
+                },
+                html = { require("formatter.filetypes.html").prettier },
+                javascript = { require("formatter.filetypes.javascript").prettier },
+                javascriptreact = { require("formatter.filetypes.javascriptreact").prettier },
+                typescript = { require("formatter.filetypes.typescript").prettier },
+                typescriptreact = { require("formatter.filetypes.typescriptreact").prettier },
+                css = { require("formatter.filetypes.css").prettier },
+                yaml = { require("formatter.filetypes.yaml").prettier },
+                json = { require("formatter.filetypes.json").prettier },
+                markdown = { require("formatter.filetypes.markdown").prettier },
+                rust = { require("formatter.filetypes.rust").rustfmt },
+                c = { require("formatter.filetypes.c").clangformat },
+                cpp = { require("formatter.filetypes.c").clangformat },
+                ["*"] = { require("formatter.filetypes.any").remove_trailing_whitespace }
             }
         })
     end

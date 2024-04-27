@@ -42,5 +42,6 @@ vim.opt.cursorline = true
 vim.opt.autoread = true
 
 vim.opt.completeopt = 'menuone,noselect'
-vim.opt.conceallevel=2
+vim.opt.conceallevel = 2
 
+vim.lsp.set_log_level("off")

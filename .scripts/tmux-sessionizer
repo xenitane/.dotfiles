@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(fd . ~ ~/code ~/code/projects --min-depth 1 --max-depth 1 --type d -H | fzf)
+    selected=$(fd . ~ ~/code --min-depth 1 --max-depth 1 --type d -H | fzf)
 fi
 
 if [[ -z $selected ]]; then

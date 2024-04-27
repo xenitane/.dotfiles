@@ -20,12 +20,8 @@ vim.keymap.set('i', '<C-c>', '<Esc>')
 
 vim.keymap.set('n', 'Q', '<nop>')
 vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
-vim.keymap.set('n', '<leader>f', vim.lsp.buf.format)
-vim.keymap.set('n', '<leader>F', function()
-    vim.lsp.buf.format()
-    vim.cmd [[w]]
-end)
-
+vim.keymap.set('n', '<leader>f', ":Format<CR>")
+vim.keymap.set('n', '<leader>F', ":FormatWrite<CR>")
 vim.keymap.set('n', '<C-n>', '<cmd>cnext<CR>zz')
 vim.keymap.set('n', '<C-b>', '<cmd>cprev<CR>zz')
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
@@ -43,3 +39,5 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
     print("sourced " .. vim.fn.expand("%"))
 end)
+
+vim.keymap.set("n", "<leader>nd", ":NoiceDismiss<CR>", { silent = true })
