@@ -96,6 +96,7 @@ return {
                 "htmx",
                 "tailwindcss",
                 "html",
+                "zls",
             },
             automatic_install = true,
             handlers = {
@@ -290,6 +291,18 @@ return {
                 rust = { require("formatter.filetypes.rust").rustfmt },
                 c = { require("formatter.filetypes.c").clangformat },
                 cpp = { require("formatter.filetypes.c").clangformat },
+                zig = { require("formatter.filetypes.zig").zigfmt },
+                go = require("formatter.filetypes.go"),
+                haskell = require("formatter.filetypes.haskell"),
+                latex = require("formatter.filetypes.latex"),
+                ocaml = require("formatter.filetypes.ocaml"),
+                python = require("formatter.filetypes.python"),
+                sh = require("formatter.filetypes.sh"),
+                zsh = require("formatter.filetypes.zsh"),
+                svelte = { require("formatter.filetypes.svelte").prettier },
+                vue = { require("formatter.filetypes.vue").prettier },
+                tex = require("formatter.filetypes.latex"),
+                toml = require("formatter.filetypes.toml"),
                 ["*"] = {
                     require("formatter.filetypes.any").remove_trailing_whitespace,
                     function()
