@@ -47,3 +47,6 @@
 [submodule ".tmux/plugins/tmux-fzf-url"]
 	path = .tmux/plugins/tmux-fzf-url
 	url = https://www.github.com/wfxr/tmux-fzf-url.git
+[submodule ".config/spicetify/Themes/adblock"]
+	path = .config/spicetify/Themes/adblock
+	url = https://github.com/Daksh777/SpotifyNoPremium

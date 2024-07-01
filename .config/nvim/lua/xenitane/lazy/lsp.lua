@@ -34,7 +34,7 @@ return {
         local lspconfig = require("lspconfig")
 
         local on_attach = function(e)
-            vim.bo[e.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
+            vim.boomnifunc = "v:lua.vim.lsp.omnifunc"
             local opts = { buffer = e.buf, noremap = true, silent = true }
             vim.keymap.set("n", "gd", function()
                 vim.lsp.buf.definition()
