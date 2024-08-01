@@ -98,7 +98,6 @@ plugins=(
     emoji
     encode64
     extract
-    fd
     fzf
     gh
     git
@@ -114,7 +113,6 @@ plugins=(
     perms
     qrcode
     rand-quote
-    ripgrep
     rsync
     rust
     safe-paste
