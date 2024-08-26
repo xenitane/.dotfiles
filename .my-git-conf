@@ -11,6 +11,8 @@
     program = gpg
 [pull]
 	rebase = false
+[rebase]
+    updateRefs = true
 [init]
 	defaultBranch = main
 [blame]

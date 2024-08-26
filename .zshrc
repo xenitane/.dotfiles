@@ -75,6 +75,8 @@ CASE_SENSITIVE="false"
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$HOME/.omz-custom
 
+source ~/.zsh-syntax-highlight.zsh
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -94,7 +96,6 @@ plugins=(
     cp
     docker
     docker-compose
-    docker-machine
     emoji
     encode64
     extract

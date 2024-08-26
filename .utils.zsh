@@ -1,42 +1,27 @@
-if command -v batcat >/dev/null 2>&1; then
-    alias bat="batcat"
-fi
-
-if command -v fd-find >/dev/null 2>&1; then
-    alias fd="fdfind"
-fi
-
 export EDITOR="nvim"
 
-if ! command -v go >/dev/null 2>&1; then
-    export PATH="/usr/local/go/bin:$PATH"
-fi
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 
-export PATH="$HOME/.local/share/fnm:$PATH"
 eval "$(fnm env)"
-
 eval "$(thefuck -a wtf)"
-
-source "$HOME/.cargo/env"
+eval "$(atuin init zsh)"
 
 alias ls="exa"
 alias tree="exa --tree"
-
 alias cat="bat"
-
-eval "$(atuin init zsh)"
+alias fman="compgen -c | fzf | xargs man"
+alias vi="nvim"
+alias vim="nvim"
 
 export PATH="$HOME/.scripts:$PATH"
 
-export PNPM_HOME="$HOME/.local/share/pnpm"
-case ":$PATH:" in
-    *":$PNPM_HOME:"*) ;;
-    *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-
-alias fman="compgen -c | fzf | xargs man"
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
+--color=selected-bg:#45475a \
+--multi"
 
 utils=(
     nvim
@@ -63,4 +48,3 @@ for util in $utils; do
         echo >&2 "$util not installed"
     fi
 done
-

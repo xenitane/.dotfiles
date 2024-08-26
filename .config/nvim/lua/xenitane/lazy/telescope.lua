@@ -17,7 +17,7 @@ return {
                     "--smart-case",
                     "-u",
                     "-g",
-                    "!{**/.git/*,**/node_modules/*,**/vendor/*}",
+                    "!{**/.git/*,**/node_modules/*,**/vendor/*,**/.zig-cache/*}",
                 },
                 -- prompt_prefix = "  " .. icons.get("telescope") .. "  ",
                 -- selection_caret = " ❯ ",
@@ -27,7 +27,7 @@ return {
         local builtin = require("telescope.builtin")
         vim.keymap.set("n", "<leader>pf", function()
             builtin.find_files({
-                find_command = { "rg", "--hidden", "--files", "-g", "!{**/.git,**/node_modules,**/vendor}" },
+                find_command = { "rg", "--hidden", "--files", "-g", "!{**/.git,**/node_modules,**/vendor,**/.zig-cache}" },
             })
         end, {})
 
@@ -52,7 +52,7 @@ return {
         end)
 
         vim.keymap.set("n", "<leader>pg", function()
-            builtin.live_grep({ glob_pattern = { "*", "!**/.git/", "!**/node_modules" } })
+            builtin.live_grep({ glob_pattern = { "*", "!**/.git/", "!**/node_modules", "!**/vendor", "!**/.zig-cache" } })
         end, {})
         vim.keymap.set("n", "<leader>pht", builtin.help_tags, {})
     end,
