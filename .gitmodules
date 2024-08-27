@@ -3,13 +3,13 @@
 	url = https://github.com/ohmyzsh/ohmyzsh.git
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
-	url = https://www.github.com/tmux-plugins/tpm.git
+	url = https://github.com/tmux-plugins/tpm.git
 [submodule ".tmux/plugins/tmux"]
 	path = .tmux/plugins/tmux
-	url = https://www.github.com/catppuccin/tmux.git
+	url = https://github.com/catppuccin/tmux.git
 [submodule ".tmux/plugins/vim-tmux-navigator"]
 	path = .tmux/plugins/vim-tmux-navigator
-	url = https://www.github.com/christoomey/vim-tmux-navigator.git
+	url = https://github.com/christoomey/vim-tmux-navigator.git
 [submodule ".omz-custom/themes/powerlevel10k"]
 	path = .omz-custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
@@ -31,22 +31,22 @@
 	branch = dist
 [submodule ".tmux/plugins/tmux-sensible"]
 	path = .tmux/plugins/tmux-sensible
-	url = https://www.github.com/tmux-plugins/tmux-sensible.git
+	url = https://github.com/tmux-plugins/tmux-sensible.git
 [submodule ".local/share/mc/skins/mc"]
 	path = .local/share/mc/skins/mc
 	url = https://github.com/catppuccin/mc.git
 [submodule ".tmux/plugins/tmux-sessionx"]
 	path = .tmux/plugins/tmux-sessionx
-	url = https://www.github.com/omerxx/tmux-sessionx.git
+	url = https://github.com/omerxx/tmux-sessionx.git
 [submodule ".tmux/plugins/tmux-thumbs"]
 	path = .tmux/plugins/tmux-thumbs
-	url = https://www.github.com/fcsonline/tmux-thumbs.git
+	url = https://github.com/fcsonline/tmux-thumbs.git
 [submodule ".tmux/plugins/tmux-fzf"]
 	path = .tmux/plugins/tmux-fzf
-	url = https://www.github.com/sainnhe/tmux-fzf.git
+	url = https://github.com/sainnhe/tmux-fzf.git
 [submodule ".tmux/plugins/tmux-fzf-url"]
 	path = .tmux/plugins/tmux-fzf-url
-	url = https://www.github.com/wfxr/tmux-fzf-url.git
+	url = https://github.com/wfxr/tmux-fzf-url.git
 [submodule ".config/spicetify/Themes/adblock"]
 	path = .config/spicetify/Themes/adblock
 	url = https://github.com/Daksh777/SpotifyNoPremium
