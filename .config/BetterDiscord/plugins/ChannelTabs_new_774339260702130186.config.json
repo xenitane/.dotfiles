@@ -1,0 +1,75 @@
+{
+    "settings": {
+        "tabs": [
+            {
+                "name": "#✦・general-chat",
+                "url": "/channels/752105258481877073/1039533815292502096",
+                "selected": false,
+                "currentStatus": "none",
+                "iconUrl": "https://cdn.discordapp.com/embed/avatars/0.png",
+                "channelId": "1039533815292502096"
+            },
+            {
+                "name": "#moj-masti",
+                "url": "/channels/1264095904684707840/1264096911368130616",
+                "selected": false,
+                "currentStatus": "none",
+                "iconUrl": "https://cdn.discordapp.com/embed/avatars/0.png",
+                "channelId": "1264096911368130616"
+            },
+            {
+                "name": "#owo",
+                "url": "/channels/1292744263100006442/1296841969225568317",
+                "selected": false,
+                "currentStatus": "none",
+                "iconUrl": "https://cdn.discordapp.com/embed/avatars/0.png",
+                "channelId": "1296841969225568317"
+            },
+            {
+                "name": "@shirayukifarts, aniketaro, modihaitohmumkinhai, _cassendra._, neko_chiii, konodiabloda, ursa0001, vaporeon_23",
+                "url": "/channels/@me/1305763930412552192",
+                "selected": false,
+                "currentStatus": "none",
+                "iconUrl": "https://cdn.discordapp.com/embed/avatars/1.png",
+                "channelId": "1305763930412552192"
+            },
+            {
+                "name": "@neko_chiii",
+                "url": "/channels/@me/1288671030684024884",
+                "selected": true,
+                "currentStatus": "offline",
+                "iconUrl": "https://cdn.discordapp.com/avatars/894394315537805372/dfacd8d7515a8ba029c4355ae0fb57cf.webp?size=40",
+                "channelId": "1288671030684024884"
+            }
+        ],
+        "favs": [],
+        "favGroups": [],
+        "showTabBar": true,
+        "showFavBar": false,
+        "reopenLastChannel": false,
+        "showFavUnreadBadges": true,
+        "showFavMentionBadges": true,
+        "showFavTypingBadge": true,
+        "showEmptyFavBadges": false,
+        "showTabUnreadBadges": true,
+        "showTabMentionBadges": true,
+        "showTabTypingBadge": true,
+        "showEmptyTabBadges": false,
+        "showActiveTabUnreadBadges": false,
+        "showActiveTabMentionBadges": false,
+        "showActiveTabTypingBadge": false,
+        "showEmptyActiveTabBadges": false,
+        "compactStyle": false,
+        "privacyMode": false,
+        "radialStatusMode": false,
+        "tabWidthMin": 80,
+        "showFavGroupUnreadBadges": true,
+        "showFavGroupMentionBadges": true,
+        "showFavGroupTypingBadge": true,
+        "showEmptyFavGroupBadges": false,
+        "showQuickSettings": true,
+        "showNavButtons": false,
+        "alwaysFocusNewTabs": false,
+        "useStandardNav": true
+    }
+}

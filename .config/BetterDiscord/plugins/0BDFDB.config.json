@@ -1,0 +1,30 @@
+{
+	"all": {
+		"changeLogs": {
+			"BDFDB": "3.8.6",
+			"BetterSearchPage": "1.2.4",
+			"CharCounter": "1.6.6",
+			"GoogleSearchReplace": "1.3.7",
+			"ImageUtilities": "5.4.6",
+			"PluginRepo": "2.5.7",
+			"QuickMention": "1.0.5",
+			"RemoveBlockedUsers": "1.6.8",
+			"SpellCheck": "1.6.9",
+			"SplitLargeMessages": "1.8.2",
+			"SpotifyControls": "1.4.1"
+		},
+		"choices": {
+			"toastPosition": "right"
+		},
+		"general": {
+			"shareData": true,
+			"showToasts": true,
+			"showSupportBadges": false,
+			"useChromium": false
+		},
+		"hashes": {
+			"0BDFDB.data.json": "b2eb703ba716adc4c1173751e19fb81d2a6949b3",
+			"0BDFDB.raw.css": "7c6c34a10391702b93af4cfaeb3965fe7b0fdcc7"
+		}
+	}
+}

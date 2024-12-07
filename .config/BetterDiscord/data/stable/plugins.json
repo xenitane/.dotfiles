@@ -1,1 +1,19 @@
-{}
+{
+    "BDFDB": true,
+    "ZeresPluginLibrary": true,
+    "BDContextMenu": false,
+    "BetterSearchPage": false,
+    "CharCounter": false,
+    "DoNotTrack": true,
+    "Double Click To Edit": true,
+    "GoogleSearchReplace": true,
+    "ImageUtilities": false,
+    "InvisibleTyping": true,
+    "QuickMention": true,
+    "RemoveBlockedUsers": true,
+    "SplitLargeMessages": false,
+    "SpotifyControls": true,
+    "URLDecode": false,
+    "UrbanDictionary": false,
+    "ChannelTabs": true
+}

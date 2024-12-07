@@ -1,0 +1,14 @@
+{
+    "settings": {
+        "regexes": [
+            {
+                "regex": "//(x|twitter)\\.com",
+                "replace": "//fxtwitter.com"
+            },
+            {
+                "regex": "pixiv\\.net",
+                "replace": "phixiv.net"
+            }
+        ]
+    }
+}

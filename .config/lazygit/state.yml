@@ -1,10 +1,7 @@
 lastupdatecheck: 0
-recentrepos:
-    - /home/xenitane/.dotfiles
-    - /home/xenitane/code/github/nonogram-solver
-    - /home/xenitane/code/github/portfolio
+recentrepos: []
 startuppopupversion: 5
-lastversion: 0.43.1
+lastversion: 0.44.1
 customcommandshistory: []
 hidecommandlog: false
 ignorewhitespaceindiffview: false
